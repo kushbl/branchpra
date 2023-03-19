@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Placement Predictor</title>
+    <style>
+        form{
+            background-image: url(https://camo.githubusercontent.com/5d0290589553e0525e4fe55802a89df18822db03892dc853f6c601c1c012c16f/68747470733a2f2f7331363335332e7063646e2e636f2f77702d636f6e74656e742f75706c6f6164732f323031382f30362f436875726e2e706e67);
+           background-size: 1000px 700px;
+           background-repeat: no-repeat;
+           
+           background-position: center;
+           }
+        .container{
+            width: 800px;
+            margin: auto;
+            padding: 10px;
+            
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px;
+            background-color:#e4e4e4;
+           
+        }
+        #container{
+            text-align: center;
+        }
+        #lb{
+            color: rgb(214, 5, 5);
+        }
+    </style>
+</head>
+# body started #
+# body start #
+<body style="background-color: #4cb6c4;">
+    
+    <h1 style="text-align: center;font-style: oblique;color: rgb(240, 235, 243);">Customer Churn Predictor</h1>
+    <form method="POST" action="/predict">
+        <div class="container">
+            <div>
+                <label id="lb">accountlength</label><br>
+                <input type="text" name="accountlength">
+            </div>
+            <div>
+                <label id="lb">internationalplan</label><br>
+                <input type="text" name="internationalplan">
+            </div>
+            <div>
+                <label id="lb">voicemailplan</label><br>
+                <input type="text" name="voicemailplan">
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <label id="lb">numbervmailmessages</label><br>
+                <input type="text" name="numbervmailmessages">
+            </div>
+            <div>
+                <label id="lb">totaldayminutes</label><br>
+                <input type="text" name="totaldayminutes">
+            </div>
+            <div>
+                <label id="lb">totaldaycalls</label><br>
+                <input type="text" name="totaldaycalls">
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <label id="lb">numbervmailmessages</label><br>
+                <input type="text" name="numbervmailmessages">
+            </div>
+            <div>
+                <label id="lb">totaldayminutes</label><br>
+                <input type="text" name="totaldayminutes">
+            </div>
+            <div>
+                <label id="lb">totaldaycalls</label><br>
+                <input type="text" name="totaldaycalls">
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <label id="lb">totaldaycharge</label><br>
+                <input type="text" name="totaldaycharge">
+            </div>
+            <div>
+                <label id="lb">totaleveminutes</label><br>
+                <input type="text" name="totaleveminutes">
+            </div>
+            <div>
+                <label id="lb">totalevecalls</label><br>
+                <input type="text" name="totalevecalls">
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <label id="lb">totalevecharge</label><br>
+                <input type="text" name="totalevecharge">
+            </div>
+            <div>
+                <label id="lb">totalnightminutes</label><br>
+                <input type="text" name="totalnightminutes">
+            </div>
+            <div>
+                <label id="lb">totalnightcalls</label><br>
+                <input type="text" name="totalnightcalls">
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <label id="lb">totalnightcharge</label><br>
+                <input type="text" name="totalnightcharge">
+            </div>
+            <div>
+                <label id="lb">totalintlminutes</label><br>
+                <input type="text" name="totalintlminutes">
+            </div>
+            <div>
+                <label id="lb">totalintlcalls</label><br>
+                <input type="text" name="totalintlcalls">
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <label id="lb">totalintlcharge</label><br>
+                <input type="text" name="totalintlcharge">
+            </div>
+            <div>
+                <label id="lb">numbercustomerservicecalls</label><br>
+                <input type="text" name="numbercustomerservicecalls">
+            </div>
+        </div>
+        <div id="container">
+            <button type="submit" formaction="/predictwo" style="text-align: center">Predict Without Scalling
+            </button><br><br>
+            <button type="submit" formaction="/predictw" style="align-self: center">Predict With Scalling
+            </button><br><br>
+        </div>
+        
+        
+    </form>
+
+</body>
+</html>
